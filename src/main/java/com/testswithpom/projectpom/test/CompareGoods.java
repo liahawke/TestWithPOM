@@ -3,19 +3,17 @@ package com.testswithpom.projectpom.test;
 import com.testswithpom.projectpom.base.BaseClass;
 import com.testswithpom.projectpom.pages.AccountPage;
 import com.testswithpom.projectpom.pages.HomePage;
+import com.testswithpom.projectpom.pages.ListingPage;
 import com.testswithpom.projectpom.pages.LoginPage;
 import org.junit.Test;
 
 public class CompareGoods extends BaseClass {
+
     /**
      * Sign in and compare goods
-     * 3. Кликаем на Dresses, затем на Summer Dresses
-     * 4. Сравниваем количество товаров на странице с тем числом что указано в сообщении
-     * - There are %integer% products
-     * 5. Кликаем на White в разделе Color
-     * 6.  Сравниваем количество товаров на странице с тем числом что указано в сообщении
-     * - There are %integer% products
+     *
      */
+
     @Test
     public void signInAndCheckName() {
 
@@ -37,8 +35,17 @@ public class CompareGoods extends BaseClass {
         //Click on Summer Dresses link
         accountPage.clickOnSummerDressesLink();
 
+        //Create new instants of ListingPage
+        ListingPage listingPage = new ListingPage(this);
+
         //Compare amount
-        accountPage.compareProducts(getListOfElements());
+        listingPage.compareProducts(getListOfElements());
+
+        //Click on White Color
+        listingPage.clickOnColor();
+
+        //Compare amount with White color filter
+        listingPage.compareProducts(getListOfElements());
 
         //Sign Out
         accountPage.signOut();

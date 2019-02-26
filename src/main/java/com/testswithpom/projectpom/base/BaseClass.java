@@ -16,8 +16,6 @@ public class BaseClass {
     private WebDriver driver;
     private WebDriverWait wait;
 
-    private String AUTH_URL = "http://automationpractice.com/index.php?controller=authentication&back=my-account";
-
     /**
      * Constructor
      *
@@ -68,13 +66,8 @@ public class BaseClass {
         wait.until(ExpectedConditions.visibilityOf(element));
     }
 
-    public void checkURL(){
-        Assert.assertEquals("Page is different", driver.getCurrentUrl(), AUTH_URL);
-    }
-
     public List <WebElement> getListOfElements(){
         List<WebElement> liElements = driver.findElements(By.xpath("//ul[@class='product_list grid row']/li"));
-        System.out.println(liElements.size());
         return liElements;
     }
 

@@ -33,7 +33,7 @@ public class SignInAndCheckName extends BaseClass {
         accountPage.signOut();
 
         //Check URL
-        checkURL();
+        homePage.checkURL();
 
         // Close site
         closeSite();
