@@ -9,13 +9,9 @@ import java.util.List;
 
 public class ListingPage extends AbstractPage{
 
-    // Web elements
-    @FindBy(xpath = "//span[@class='heading-counter']")
-    private WebElement numInMessage;
 
-    @FindBy (xpath="//a[contains(text(),'White')]")
-    private WebElement colorWhite;
-
+    @FindBy (xpath = "//div[@class='block_content']/ul[@class='tree dynamized']//a[contains(text(),'Summer Dresses')]")
+    private WebElement summerDressesLink;
     /**
      * Constructor
      *
@@ -27,21 +23,14 @@ public class ListingPage extends AbstractPage{
         testClass.waitTillElementIsVisible(divPage);
     }
 
-    /**
-     * Compare counter of Products
-     *
-     *
-     * @param liElements
-     */
 
-    public void compareProducts(List<WebElement> liElements){
-        Assert.assertEquals("Amount of products is not equal", "There are "+ liElements.size() + " products.", numInMessage.getText());
+    /**
+     * Click on subcategory Summer Dresses link
+     *
+     */
+    public SubcategoryPage clickOnSummerDressesLink(){
+        summerDressesLink.click();
+        return new SubcategoryPage(testClass);
     }
 
-    /**
-     * Click on link with color filter
-     *
-     */
-
-    public void clickOnColor(){ colorWhite.click(); }
 }

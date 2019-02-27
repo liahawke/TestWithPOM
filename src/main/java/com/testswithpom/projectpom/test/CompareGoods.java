@@ -1,10 +1,7 @@
 package com.testswithpom.projectpom.test;
 
 import com.testswithpom.projectpom.base.BaseClass;
-import com.testswithpom.projectpom.pages.AccountPage;
-import com.testswithpom.projectpom.pages.HomePage;
-import com.testswithpom.projectpom.pages.ListingPage;
-import com.testswithpom.projectpom.pages.LoginPage;
+import com.testswithpom.projectpom.pages.*;
 import org.junit.Test;
 
 public class CompareGoods extends BaseClass {
@@ -15,7 +12,7 @@ public class CompareGoods extends BaseClass {
      */
 
     @Test
-    public void signInAndCheckName() {
+    public void compareGoods() throws InterruptedException {
 
         // Open site
         HomePage homePage = openSite();
@@ -23,35 +20,29 @@ public class CompareGoods extends BaseClass {
         // Click on Sign In link
         LoginPage loginPage = homePage.clickLoginLink();
 
-        //Fill valid creeds
-        loginPage.fillInputOnLoginPage();
-
         //Click Login button
-        AccountPage accountPage = loginPage.clickLoginBtn();
+        AccountPage accountPage = loginPage.fillInputOnLoginPage();
 
         //Click on Dresses link
-        accountPage.clickOnDressesLink();
+        ListingPage listingPage = accountPage.clickOnDressesLink();
 
         //Click on Summer Dresses link
-        accountPage.clickOnSummerDressesLink();
-
-        //Create new instants of ListingPage
-        ListingPage listingPage = new ListingPage(this);
+        SubcategoryPage subcategoryPage = listingPage.clickOnSummerDressesLink();
 
         //Compare amount
-        listingPage.compareProducts(getListOfElements());
+       // subcategoryPage.compareProducts();
 
         //Click on White Color
-        listingPage.clickOnColor();
+        subcategoryPage.clickOnColor();
 
         //Compare amount with White color filter
-        listingPage.compareProducts(getListOfElements());
+//        subcategoryPage.compareProducts();
 
         //Sign Out
-        accountPage.signOut();
+    //    accountPage.signOut();
 
         // Close site
-        closeSite();
+      //  closeSite();
     }
 
 

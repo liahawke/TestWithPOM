@@ -20,11 +20,8 @@ public class SignInAndCheckName extends BaseClass {
         // Click on Sign In link
         LoginPage loginPage = homePage.clickLoginLink();
 
-        //Sign in with valid creeds
-        loginPage.fillInputOnLoginPage();
-
         //Signing in Account
-        AccountPage accountPage = loginPage.clickLoginBtn();
+        AccountPage accountPage = loginPage.fillInputOnLoginPage();
 
         //Verify user name
         accountPage.verifyName();
@@ -33,7 +30,7 @@ public class SignInAndCheckName extends BaseClass {
         accountPage.signOut();
 
         //Check URL
-        homePage.checkURL();
+        homePage.checkTitle();
 
         // Close site
         closeSite();

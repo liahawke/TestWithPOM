@@ -63,19 +63,16 @@ public class AbstractPage {
      * Click on Dresses link
      *
      */
-    public void clickOnDressesLink(){ dressesLink.click(); }
-
-    /**
-     * Click on subcategory Summer Dresses link
-     *
-     */
-    public void clickOnSummerDressesLink(){ summerDressesLink.click(); }
+    public ListingPage clickOnDressesLink(){
+        dressesLink.click();
+        return new ListingPage(testClass);
+    }
 
     /**
      * Check title of AUTHENTICATION page
      *
      */
-    public void checkURL(){
+    public void checkTitle(){
         Assert.assertEquals("Page is different", testClass.getDriver().getTitle(), AUTH_TITLE);
     }
 }

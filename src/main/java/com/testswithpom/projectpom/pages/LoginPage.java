@@ -28,22 +28,12 @@ public class LoginPage extends AbstractPage {
     }
 
     /**
-     * Filling inputs on Login form
+     * Login form
      *
      */
-    public void fillInputOnLoginPage(){
-        loginInput.click();
+    public AccountPage fillInputOnLoginPage(){
         loginInput.sendKeys(YamlParser.getYamlData().getEmail());
-        passwordInput.click();
         passwordInput.sendKeys(YamlParser.getYamlData().getPassword());
-    }
-
-    /**
-     * Click Login button
-     *
-     * @return
-     */
-    public AccountPage clickLoginBtn() {
         loginBtn.click();
         return new AccountPage(testClass);
     }

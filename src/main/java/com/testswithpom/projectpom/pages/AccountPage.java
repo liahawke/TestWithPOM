@@ -24,7 +24,6 @@ public class AccountPage extends AbstractPage{
      * Verify username
      *
      */
-
     public void verifyName(){
         Assert.assertEquals("User name is wrong", USERNAME, userName.getText());
     }
