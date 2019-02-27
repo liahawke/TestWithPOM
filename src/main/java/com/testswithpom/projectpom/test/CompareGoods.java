@@ -30,16 +30,16 @@ public class CompareGoods extends BaseClass {
         SubcategoryPage subcategoryPage = listingPage.clickOnSummerDressesLink();
 
         //Compare amount
-       // subcategoryPage.compareProducts();
+        subcategoryPage.compareProducts();
 
         //Click on White Color
         subcategoryPage.clickOnColor();
 
         //Compare amount with White color filter
-//        subcategoryPage.compareProducts();
+        subcategoryPage.compareProducts();
 
         //Sign Out
-    //    accountPage.signOut();
+        accountPage.signOut();
 
         // Close site
       //  closeSite();

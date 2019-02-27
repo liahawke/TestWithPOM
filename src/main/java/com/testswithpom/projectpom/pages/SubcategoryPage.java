@@ -17,7 +17,7 @@ public class SubcategoryPage extends AbstractPage{
     @FindBy(xpath = "//span[@class='heading-counter']")
     private WebElement numInMessage;
 
-    @FindBy (xpath="//a[contains(text(),'White')]")
+    @FindBy (xpath="//input[@id='layered_id_attribute_group_8']")
     private WebElement colorWhite;
 
     @FindBy (xpath="//ul[@class='product_list grid row']/li")
@@ -41,8 +41,11 @@ public class SubcategoryPage extends AbstractPage{
      */
 
     public void compareProducts(){
-          List<WebElement> liElements = testClass.getDriver().findElements(By.xpath("//ul[@class='product_list grid row']/li"));
-          Assert.assertEquals("Amount of products is not equal", "There are "+ liElements.size() + " products.", numInMessage.getText());
+        testClass.waitTillElementIsVisible(listOfDresses);
+        List<WebElement> liElements = testClass.getDriver().findElements(By.xpath("//ul[@class='product_list grid row']/li"));
+        Assert.assertEquals("Amount of products is not equal", "There are "+ liElements.size() + " products.", numInMessage.getText());
+        System.out.println("There are "+ liElements.size() + " products.");
+        System.out.println("Actual: " + numInMessage.getText());
     }
 
     /**
