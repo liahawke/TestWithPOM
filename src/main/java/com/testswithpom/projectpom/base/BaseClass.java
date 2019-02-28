@@ -2,7 +2,6 @@ package com.testswithpom.projectpom.base;
 
 import com.testswithpom.projectpom.pages.HomePage;
 import com.testswithpom.projectpom.utils.YamlParser;
-import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.chrome.ChromeDriver;
@@ -59,7 +58,6 @@ public class BaseClass {
      *
      * @return HomePage
      */
-
     public HomePage openSite() {
         driver.get(YamlParser.getYamlData().getUrl());
         return new HomePage(this);
@@ -81,14 +79,23 @@ public class BaseClass {
         wait.until(ExpectedConditions.visibilityOf(element));
     }
 
+    /**
+     * Wait till element be clikable
+     *
+     * @param element
+     */
     public void waitTillElementBeClickable(WebElement element) {
         wait.until(ExpectedConditions.elementToBeClickable(element));
     }
 
+    /**
+     * Wait until loader is invisible
+     *
+     * @param loader
+     */
     public void waitUntilLoaderInvisible(String loader) {
-        wait.until(ExpectedConditions.invisibilityOfElementLocated(By.xpath(loader)));
+        driver.manage().timeouts().implicitlyWait(10, TimeUnit.SECONDS);
     }
-
 
 }
 

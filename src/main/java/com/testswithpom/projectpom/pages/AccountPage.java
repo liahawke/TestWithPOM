@@ -12,7 +12,7 @@ public class AccountPage extends AbstractPage{
     private final String USERNAME = "Lia Hawke";
 
     // Web Elements
-    @FindBy (xpath = "//*[@id=\"header\"]/div[2]/div/div/nav/div[1]/a/span")
+    @FindBy (xpath = "//a[@title='View my customer account']")
     private WebElement userName;
 
     public AccountPage(BaseClass testClass) {

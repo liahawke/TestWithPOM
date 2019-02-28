@@ -2,7 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="101585d0-8479-4205-b0e8-f65556c7430e" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/testswithpom/projectpom/base/BaseClass.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/testswithpom/projectpom/base/BaseClass.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/testswithpom/projectpom/pages/SubcategoryPage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/testswithpom/projectpom/pages/SubcategoryPage.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/testswithpom/projectpom/test/CompareGoods.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/testswithpom/projectpom/test/CompareGoods.java" afterDir="false" />
     </list>
@@ -21,12 +21,24 @@
     </projectState>
   </component>
   <component name="FileEditorManager">
-    <leaf>
+    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/main/java/com/testswithpom/projectpom/pages/SubcategoryPage.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="650">
-              <caret line="58" column="57" lean-forward="true" selection-start-line="58" selection-start-column="57" selection-end-line="58" selection-end-column="57" />
+            <state relative-caret-position="1139">
+              <caret line="67" column="6" lean-forward="true" selection-start-line="67" selection-start-column="6" selection-end-line="67" selection-end-column="6" />
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/com/testswithpom/projectpom/base/BaseClass.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="1530">
+              <caret line="98" selection-start-line="98" selection-end-line="98" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -37,8 +49,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/com/testswithpom/projectpom/test/CompareGoods.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="296">
-              <caret line="38" column="31" lean-forward="true" selection-start-line="38" selection-start-column="31" selection-end-line="38" selection-end-column="31" />
+            <state relative-caret-position="765">
+              <caret line="45" lean-forward="true" selection-start-line="45" selection-end-line="45" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -73,13 +85,13 @@
         <option value="$PROJECT_DIR$/src/main/java/com/testswithpom/projectpom/pages/ListingPage.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/testswithpom/projectpom/pages/AbstractPage.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/testswithpom/projectpom/pages/AccountPage.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/testswithpom/projectpom/pages/SubcategoryPage.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/testswithpom/projectpom/base/BaseClass.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/testswithpom/projectpom/test/CompareGoods.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/testswithpom/projectpom/pages/SubcategoryPage.java" />
       </list>
     </option>
   </component>
-  <component name="ProjectFrameBounds">
+  <component name="ProjectFrameBounds" extendedState="1">
     <option name="x" value="-8" />
     <option name="y" value="-8" />
     <option name="width" value="1296" />
@@ -91,6 +103,8 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
+      <pane id="Scope" />
+      <pane id="PackagesPane" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -162,14 +176,12 @@
           <select />
         </subPane>
       </pane>
-      <pane id="Scope" />
-      <pane id="PackagesPane" />
     </panes>
   </component>
   <component name="PropertiesComponent">
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1551306448867" />
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1551384851495" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$/../Lesson10PageObject3-master" />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
     <property name="nodejs_npm_path_reset_for_default_project" value="true" />
@@ -186,7 +198,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="JUnit.CompareGoods.compareGoods">
+  <component name="RunManager" selected="JUnit.SignInAndCheckName.signInAndCheckName">
     <configuration name="CompareGoods" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="TestWithPOM.TestWithPOM.main" />
       <extension name="coverage">
@@ -252,10 +264,10 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="JUnit.SignInAndCheckName.signInAndCheckName" />
         <item itemvalue="JUnit.CompareGoods.compareGoods" />
         <item itemvalue="JUnit.CompareGoods" />
         <item itemvalue="JUnit.CompareGoods.signInAndCheckName" />
-        <item itemvalue="JUnit.SignInAndCheckName.signInAndCheckName" />
       </list>
     </recent_temporary>
   </component>
@@ -274,28 +286,11 @@
       <workItem from="1551208254716" duration="6430000" />
       <workItem from="1551293030133" duration="9623000" />
       <workItem from="1551305969096" duration="535000" />
+      <workItem from="1551382370576" duration="2047000" />
     </task>
     <servers />
   </component>
   <component name="TestHistory">
-    <history-entry file="CompareGoods_compareGoods - 2019.02.27 at 23h 29m 56s.xml">
-      <configuration name="CompareGoods.compareGoods" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="CompareGoods_compareGoods - 2019.02.27 at 23h 34m 37s.xml">
-      <configuration name="CompareGoods.compareGoods" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="CompareGoods_compareGoods - 2019.02.27 at 23h 37m 38s.xml">
-      <configuration name="CompareGoods.compareGoods" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="CompareGoods_compareGoods - 2019.02.27 at 23h 38m 38s.xml">
-      <configuration name="CompareGoods.compareGoods" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="CompareGoods_compareGoods - 2019.02.27 at 23h 41m 30s.xml">
-      <configuration name="CompareGoods.compareGoods" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="CompareGoods_compareGoods - 2019.02.28 at 00h 21m 28s.xml">
-      <configuration name="CompareGoods.compareGoods" configurationId="JUnit" />
-    </history-entry>
     <history-entry file="CompareGoods_compareGoods - 2019.02.28 at 00h 23m 03s.xml">
       <configuration name="CompareGoods.compareGoods" configurationId="JUnit" />
     </history-entry>
@@ -308,14 +303,33 @@
     <history-entry file="CompareGoods_compareGoods - 2019.02.28 at 00h 27m 52s.xml">
       <configuration name="CompareGoods.compareGoods" configurationId="JUnit" />
     </history-entry>
+    <history-entry file="CompareGoods_compareGoods - 2019.02.28 at 21h 54m 20s.xml">
+      <configuration name="CompareGoods.compareGoods" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="CompareGoods_compareGoods - 2019.02.28 at 21h 55m 16s.xml">
+      <configuration name="CompareGoods.compareGoods" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="CompareGoods_compareGoods - 2019.02.28 at 22h 03m 10s.xml">
+      <configuration name="CompareGoods.compareGoods" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="CompareGoods_compareGoods - 2019.02.28 at 22h 05m 13s.xml">
+      <configuration name="CompareGoods.compareGoods" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="CompareGoods_compareGoods - 2019.02.28 at 22h 08m 33s.xml">
+      <configuration name="CompareGoods.compareGoods" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="CompareGoods_compareGoods - 2019.02.28 at 22h 10m 24s.xml">
+      <configuration name="CompareGoods.compareGoods" configurationId="JUnit" />
+    </history-entry>
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="28961000" />
+    <option name="totallyTimeSpent" value="31008000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1296" height="1000" extended-state="0" />
+    <editor active="true" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.27669904" />
+      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.27427185" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Designer" order="2" />
       <window_info id="Image Layers" order="3" />
@@ -324,7 +338,7 @@
       <window_info id="Favorites" order="6" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" weight="0.32949308" />
-      <window_info anchor="bottom" id="Run" order="2" weight="0.32949308" />
+      <window_info active="true" anchor="bottom" id="Run" order="2" visible="true" weight="0.32949308" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
@@ -480,20 +494,18 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/com/testswithpom/projectpom/base/BaseClass.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="310">
-          <caret line="83" column="42" selection-start-line="83" selection-start-column="16" selection-end-line="83" selection-end-column="42" />
+        <state relative-caret-position="1530">
+          <caret line="98" selection-start-line="98" selection-end-line="98" />
           <folding>
             <element signature="imports" expanded="true" />
-            <element signature="e#1635#1636#0" expanded="true" />
-            <element signature="e#1703#1704#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/com/testswithpom/projectpom/test/CompareGoods.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="296">
-          <caret line="38" column="31" lean-forward="true" selection-start-line="38" selection-start-column="31" selection-end-line="38" selection-end-column="31" />
+        <state relative-caret-position="765">
+          <caret line="45" lean-forward="true" selection-start-line="45" selection-end-line="45" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
@@ -502,8 +514,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/com/testswithpom/projectpom/pages/SubcategoryPage.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="650">
-          <caret line="58" column="57" lean-forward="true" selection-start-line="58" selection-start-column="57" selection-end-line="58" selection-end-column="57" />
+        <state relative-caret-position="1139">
+          <caret line="67" column="6" lean-forward="true" selection-start-line="67" selection-start-column="6" selection-end-line="67" selection-end-column="6" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>

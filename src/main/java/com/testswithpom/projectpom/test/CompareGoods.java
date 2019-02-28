@@ -35,6 +35,9 @@ public class CompareGoods extends BaseClass {
         //Click on White Color
         subcategoryPage.clickOnColor();
 
+        //Check filter applying
+        subcategoryPage.checkFilterApply();
+
         //Compare amount with White color filter
         subcategoryPage.compareProducts();
 
@@ -42,7 +45,7 @@ public class CompareGoods extends BaseClass {
         accountPage.signOut();
 
         // Close site
-      //  closeSite();
+        closeSite();
     }
 
 
